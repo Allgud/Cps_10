@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: url("../fonts/TTLakes-Regular.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.ttf") format("truetype"),
+    url("../fonts/TTLakes-Regular.svg#webfont") format("svg");
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: url("../fonts/TTLakes-Bold.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes-Bold.ttf") format("truetype"),
+    url("../fonts/TTLakes-Bold.svg#webfont") format("svg");
+  font-weight: 900;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: url("../fonts/TTLakes-Medium.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.ttf") format("truetype"),
+    url("../fonts/TTLakes-Medium.svg#webfont") format("svg");
+  font-weight: 500;
+  font-size: normal;
+}
+
+.footer {
+  width: 320px;
+  font-family: "TTLakes";
+  color: #7e7e82;
+  padding: 16px 0px;
+}
+
+.footer__container {
+  background-color: #f8f8f8;
+  border-top: 1px solid #d9fff5;
+  padding-top: 8px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  padding: 8px 0px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 100vw;
+  }
+  .footer__container {
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+  }
+
+  .footer p {
+    flex: 0 0 33%;
+  }
+
+  .footer p:first-child {
+    text-align: left;
+  }
+
+  .footer p:last-child {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1120px) {
+  .footer {
+    width: 98%;
+  }
+
+  .footer p:nth-child(2) {
+    text-align: left;
+  }
+}

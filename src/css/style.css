@@ -1,0 +1,116 @@
+@import url(./sidebar.css);
+@import url(./service__page.css);
+@import url(./brands.css);
+@import url(./types.css);
+@import url(./price.css);
+@import url(./offer.css);
+@import url(./footer.css);
+@import url(./modal.css);
+@import "./types.css";
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: url("../fonts/TTLakes-Regular.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.ttf") format("truetype"),
+    url("../fonts/TTLakes-Regular.svg#webfont") format("svg");
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: url("../fonts/TTLakes-Bold.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes-Bold.ttf") format("truetype"),
+    url("../fonts/TTLakes-Bold.svg#webfont") format("svg");
+  font-weight: 900;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: url("../fonts/TTLakes-Medium.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.ttf") format("truetype"),
+    url("../fonts/TTLakes-Medium.svg#webfont") format("svg");
+  font-weight: 500;
+  font-size: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+aside {
+  width: 320px;
+  transform: translateX(-320px);
+  display: none;
+}
+
+.menu--open {
+  display: block;
+  transform: translateX(0);
+  z-index: 3;
+}
+
+main {
+  width: calc(100% - 320px);
+  /*height: 100vh;*/
+  margin-left: 1px;
+}
+
+.main--swing {
+  transform: translateX(-320px);
+  opacity: 0.5;
+}
+
+/*GLOBAL*/
+
+.button {
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 20px;
+  outline: none;
+  border-style: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  aside {
+    transform: translateX(0);
+    z-index: 10;
+  }
+
+  main {
+    min-width: calc(100% - 320px);
+  }
+
+  .dropdown {
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 1120px) {
+  aside {
+    position: relative;
+    display: block !important;
+    transform: translateX(0) !important;
+  }
+  .dropdown {
+    padding-bottom: 65px;
+  }
+}

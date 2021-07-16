@@ -14,7 +14,6 @@ let modals = document.querySelectorAll('.modal')
 let menuButton = document.querySelector('.btn--burger')
 let menu = document.getElementsByTagName('aside')
 let main = document.getElementsByTagName('main')
-let sidebar = document.querySelector('.sidebar')
 let currentWidth = window.screen.width;
 
 window.addEventListener('resize', () => {
@@ -35,11 +34,11 @@ buttonMessage.forEach( item => {
 
 closeBtn.forEach( item => {
     item.addEventListener('click', () => {
+      if(currentWidth < 1120){
+        menu[0].classList.remove('menu--open')
+        main[0].classList.remove('main--swing')
+      }
         modals.forEach(el => {
-            if(currentWidth < 1120){
-                menu[0].classList.remove('menu--open')
-                main[0].classList.remove('main--swing')
-            }
             el.classList.remove('modal--open')
         })
     })

@@ -48,8 +48,7 @@ aside {
 }
 
 main {
-  width: calc(100% - 320px);
-  /*height: 100vh;*/
+  width: 100%;
   margin-left: 1px;
 }
 
@@ -79,10 +78,6 @@ main {
     z-index: 10;
   }
 
-  main {
-    min-width: calc(100% - 320px);
-  }
-
   .dropdown {
     padding-bottom: 48px;
   }
@@ -94,6 +89,7 @@ main {
     display: block !important;
     transform: translateX(0) !important;
   }
+
   .dropdown {
     padding-bottom: 65px;
   }

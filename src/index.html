@@ -662,77 +662,67 @@
           </p>
         </div>
       </section>
-      <div id="modal--call" class="modal">
-        <div class="header__button button--tablet">
-          <button class="button btn--close" type="button">
-            <img src="./img/icons/cross.svg" alt="Кнопка закрытия меню" />
-          </button>
-        </div>
-        <div class="modal__container">
-          <div class="header__button button--mobile">
-            <button class="button btn--close" type="button">
-              <img src="./img/icons/cross.svg" alt="Кнопка закрытия меню" />
-            </button>
-          </div>
-          <div class="modal__title">
-            <h3>Заказать звонок</h3>
-          </div>
-          <form action="#" method="POST">
-            <input type="tel" placeholder="Телефон" pattern="8[0-9]{10}" />
-
-            <p>
-              Нажимая “отправить”, вы даете согласие на <a href="#"
-                >обработку персональных данных</a
-              >
-              и соглашаетесь с нашей
-              <a href="#">политикой конфиденциальности</a>
-            </p>
-            <button type="submit" class="send__button" href="#">
-              <span> ОТПРАВИТЬ </span>
-            </button>
-          </form>
-        </div>
-      </div>
-      <div id="modal--message" class="modal">
-        <div class="header__button button--tablet">
-          <button class="button btn--close" type="button">
-            <img src="./img/icons/cross.svg" alt="Кнопка закрытия меню" />
-          </button>
-        </div>
-        <div class="modal__container">
-          <div class="header__button button--mobile">
-            <button class="button btn--close" type="button">
-              <img src="./img/icons/cross.svg" alt="Кнопка закрытия меню" />
-            </button>
-          </div>
-          <div class="modal__title">
-            <h3>Обратная связь</h3>
-          </div>
-          <form action="#" method="POST">
-            <input type="text" placeholder="Имя" required />
-            <input type="tel" placeholder="Телефон" pattern="8[0-9]{10}" />
-            <input type="email" placeholder="Электронная почта" />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Сообщение"
-              rows="3"
-            ></textarea>
-
-            <p>
-              Нажимая “отправить”, вы даете согласие на <a href="#"
-                >обработку персональных данных</a
-              >
-              и соглашаетесь с нашей
-              <a href="#">политикой конфиденциальности</a>
-            </p>
-            <button type="submit" class="send__button" href="#">
-              <span> ОТПРАВИТЬ </span>
-            </button>
-          </form>
-        </div>
-      </div>
     </main>
+    <div id="modal--message" class="modal">
+      <div class="modal__container">
+        <div class="header__button button--mobile">
+          <button class="button btn--close" type="button">
+            <img src="./img/icons/cross.svg" alt="Кнопка закрытия меню" />
+          </button>
+        </div>
+        <div class="modal__title">
+          <h3>Обратная связь</h3>
+        </div>
+        <form action="#" method="POST">
+          <input type="text" placeholder="Имя" required />
+          <input type="tel" placeholder="Телефон" pattern="8[0-9]{10}" />
+          <input type="email" placeholder="Электронная почта" />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Сообщение"
+            rows="3"
+          ></textarea>
+
+          <p>
+            Нажимая “отправить”, вы даете согласие на <a href="#"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="#">политикой конфиденциальности</a>
+          </p>
+          <button type="submit" class="send__button" href="#">
+            <span> ОТПРАВИТЬ </span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="modal--call" class="modal">
+      <div class="modal__container">
+        <div class="header__button button--mobile">
+          <button class="button btn--close" type="button">
+            <img src="./img/icons/cross.svg" alt="Кнопка закрытия меню" />
+          </button>
+        </div>
+        <div class="modal__title">
+          <h3>Заказать звонок</h3>
+        </div>
+        <form action="#" method="POST">
+          <input type="tel" placeholder="Телефон" pattern="8[0-9]{10}" />
+
+          <p>
+            Нажимая “отправить”, вы даете согласие на <a href="#"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="#">политикой конфиденциальности</a>
+          </p>
+          <button type="submit" class="send__button">
+            <span> ОТПРАВИТЬ </span>
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>

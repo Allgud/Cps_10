@@ -1,3 +1,5 @@
+import '../scss/style.scss'
+
 /*Modal*/
 
 let buttonCall = document.querySelectorAll('.btn--call')
@@ -47,7 +49,7 @@ closeBtn.forEach( item => {
 
 menuButton.addEventListener('click', () => {
     menu[0].classList.add('menu--open')
-    main[0].classList.add('main--swing')  
+    main[0].classList.add('main--swing')
 })
 
 
